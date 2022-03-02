@@ -35,7 +35,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip-sims')"
     needs: install-runsim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: technote-space/get-diff-action@v3
         with:
           SUFFIX_FILTER: |
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: install-runsim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: technote-space/get-diff-action@v3
         with:
           SUFFIX_FILTER: |
@@ -82,7 +82,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip-sims')"
     needs: install-runsim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: technote-space/get-diff-action@v3
         with:
           SUFFIX_FILTER: |
@@ -106,7 +106,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip-sims')"
     needs: install-runsim
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: technote-space/get-diff-action@v3
         with:
           SUFFIX_FILTER: |
